@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+    web:
+        deploy:
+            x-aws-autoscaling:
+                min: 2
+                max: 5
+                cpu: 10
